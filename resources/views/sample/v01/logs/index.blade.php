@@ -39,7 +39,7 @@
     @endphp
     <tr>
       <td nowrap><a href="{{ $href }}">{{ $log->id }}</a></td>
-      <td nowrap>{{ $log->updated_at->format('Y/m/d H:i:s') }}</td>
+      <td nowrap>{{ $log->reported_at->format('Y/m/d H:i:s.v') }}</td>
       <td>{{ $log->log_type }}</td>
       <td>{{ $log->log_body }}</td>
     </tr>

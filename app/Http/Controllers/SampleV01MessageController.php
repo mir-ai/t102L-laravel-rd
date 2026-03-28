@@ -71,6 +71,36 @@ class SampleV01MessageController extends Controller
     }
 
     /**
+     * APIを通じて、最新のメッセージを１件返す
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\Response
+     */
+    public function apiLatest(Request $request)
+    {
+        $message = Message::query()
+        ->orderBy('id', 'desc')
+        ->first();
+
+        if (! $message) {
+            $data = [
+                'is_success' => 'N',
+                'reason' => 'NOT FOUND',
+            ];
+        } else {
+            $data = [
+                'is_success' => 'Y',
+                'id' => $message->id ?? 0,
+                'message_title' => $message?->message_id,
+                'message_body' => $message?->message_body,
+                'created_at' => $message?->created_at->format('Y-m-d H:i:s'),
+            ];
+        }
+
+        return response()->json($data, 200, [], JSON_UNESCAPED_UNICODE);
+    }
+
+    /**
      * MQTTを用いて、クライアントに更新があったことを伝達する
      *
      * @param string $payload
@@ -84,4 +114,5 @@ class SampleV01MessageController extends Controller
 
         return $topic;
     }
+
 }

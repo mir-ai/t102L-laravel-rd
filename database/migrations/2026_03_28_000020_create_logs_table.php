@@ -21,11 +21,12 @@ return new class extends Migration
             $table->increments('id');
             $table->string('log_type', 16);
             $table->text('log_body');
+            $table->dateTime('reported_at', 3)->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->dateTime('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->dateTime('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
             $table->dateTime('deleted_at')->nullable();
 
-            $table->index(['created_at'], 'logs_idx_1');
+            $table->index(['reported_at'], 'logs_idx_1');
             $table->comment('ログ');
         });
 
