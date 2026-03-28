@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+// MIRAIE obata@mir-ai.co.jp
+
+body {
+  background-color: #fff;
+  overflow-y: scroll;
+  font-family: 'Lato', YakuhanJP, 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: var(--color-font);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+
+// 左青線・囲み
+h1.miraie2 {
+    margin: 0 0 0.6em;
+    padding: 10px 10px 8px 12px;
+    font-size: 260%;
+    border-bottom: 2px solid #000000;
+    box-shadow: 0px 2px -2px -2px gray;
+    clear: both;
+}
+
+h2.miraie2 {
+    margin: 0 0 0.4em;
+    padding: 8px 0px 8px 20px;
+    font-size: 200%;
+    background-color: #ffffff;
+    border-top: 1px solid #0d6efd;
+    border-left: 13px solid #0d6efd;
+    border-right: 1px solid #0d6efd;
+    border-bottom: 1px solid #0d6efd;
+    box-shadow: 2px 2px 4px -2px gray;
+    clear: both;
+}
+
+h3.miraie2 {
+    margin: 1.2em 0 1em;
+    padding: 0 0 0 9px;
+    font-size: 180%;
+    border-left: 6px solid #0d6efd;
+    clear: both;
+}
+
+h4.miraie2 {
+    margin: 1.2em 0 1em;
+    padding: 0 0 0 9px;
+    font-size: 160%;
+    border-left: 6px solid #0d6efd;
+    clear: both;
+}
+
+h5.miraie2 {
+    margin: 1.1em 0 1em;
+    padding: 0 0 0 8px;
+    font-size: 140%;
+    border-left: 5px solid #0d6efd;
+    clear: both;
+}
+
+/* 灰下線バージョン */
+
+h1.miraie5 {
+    margin: 0 0 0.3em;
+    padding: 0px 10px 8px 0px;
+    font-size: 250%;
+    border-bottom: 2px solid #CCCCCC;
+    box-shadow: 0px 2px -2px -2px gray;
+    clear: both;
+}
+
+h2.miraie5 {
+    margin: 0 0 0.2em;
+    padding: 0px 0px 8px 0px;
+    font-size: 220%;
+    border-bottom: 2px solid #CCCCCC;
+    box-shadow: 0px 2px -2px -2px gray;
+    clear: both;
+}
+
+h3.miraie5 {
+    margin: 1em 0 0.2em;
+    padding: 0px 0px 6px 0px;
+    font-size: 190%;
+    border-bottom: 2px solid #CCCCCC;
+    box-shadow: 0px 2px -2px -2px gray;
+    clear: both;
+}
+
+h4.miraie5 {
+    margin: 1em 0 0.1em;
+    padding: 4px 0px 4px 0px;
+    font-size: 160%;
+    border-bottom: 2px solid #CCCCCC;
+    box-shadow: 0px 2px -2px -2px gray;
+    clear: both;
+}
+
+h5.miraie5 {
+    margin: 1em 0 0.1em;
+    padding: 2px 0px 2px 0px;
+    font-size: 130%;
+    border-bottom: 1px solid #CCCCCC;
+    box-shadow: 0px 2px -2px -2px gray;
+    clear: both;
+}
+
+h6.miraie5 {
+    margin: 1em 0 0.1em;
+    padding: 1px 0px 1px 0px;
+    font-size: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    box-shadow: 0px 2px -2px -2px gray;
+    clear: both;
+}
+
+.space-1 {
+    margin-left: 0em;
+}
+
+.space-2 {
+    margin-left: 1.5em;
+}
+
+.space-3 {
+    margin-left: 3em;
+}
+
+.space-4 {
+    margin-left: 4.5em;
+}
+
+.space-5 {
+    margin-left: 6em;
+}
+
+#map {
+    height: 400px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+}
+
+.lg-s2 {
+    font-size: 60%;
+}
+
+.lg-s1 {
+    font-size: 80%;
+}
+
+.lg-0 {
+    font-size: 100%;
+}
+
+.lg-1 {
+    font-size: 140%;
+}
+
+.lg-2 {
+    font-size: 160%;
+}
+
+.lg-3 {
+    font-size: 180%;
+}
+
+.lg-4 {
+    font-size: 220%;
+}
+
+h1.ml {
+    margin: 0.5em 0em 0.5em;
+    padding: 0 0 0.2em;
+    font-size: 160%;
+    border-bottom: 1px solid #0d6efd;
+    clear: both;
+}
+
+h2.ml {
+    margin: 0 0 0.4em;
+    padding: 8px 0px 8px 8px;
+    font-size: 200%;
+    border-bottom: 1px solid #0d6efd;
+    clear: both;
+}
+
+h5.ml {
+    font-size: 140%;
+    padding: 0 0 0 4px;
+    border-left: 5px solid #0d6efd;
+    clear: both;
+}
+
+.loading {
+    background-image: url("https://d32z5v37ilmmja.cloudfront.net/img/loading.gif");
+    background-size: 25px 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ccc;
+}
+
+/* Flex Text area */
+/* https://qiita.com/tsmd/items/fce7bf1f65f03239eef0 */
+
+.FlexTextarea {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.FlexTextarea__dummy {
+    overflow: hidden;
+    visibility: hidden;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    min-height: 120px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border: 1px solid;
+}
+
+.FlexTextarea__textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #b6c3c6;
+    border-radius: 4px;
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    resize: none;
+}
+
+.FlexTextarea__textarea:focus {
+    box-shadow: 0 0 0 4px rgba(35, 167, 195, 0.3);
+    outline: 0;
+}
+
+/* livewire slow spinner */
+.slow-spinner {
+    .spinner-border {
+        animation-duration: 2s;
+    }
+}
