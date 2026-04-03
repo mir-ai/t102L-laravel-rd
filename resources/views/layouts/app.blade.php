@@ -35,8 +35,18 @@
           <span class="ms-2">
             {{ config('_env.APP_NAME_JP', '管理画面') }}
           </span>
-          @if (request()->route()->getName() != 'index')
+          @php
+            $route_name = request()->route()->getName();
+          @endphp
+          @if ($route_name != 'index')
             <span class="ms-2 fw-bold">
+              @if (str_contains($route_name, 'murakami.'))
+                <span class="text-primary">ムラカミワールド</span>
+              @elseif (str_contains($route_name, 'kobayashi.'))
+                <span class="text-primary">コバヤシワールド</span>
+              @elseif (str_contains($route_name, 'sample.'))
+                <span class="text-primary">サンプルワールド</span>
+              @endif
               <a href="{{ route('index') }}">トップに戻る</a>
             </span>
           @endif
