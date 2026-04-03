@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="miraie5">ララベル サーバ</h1>
+<h1 class="miraie5">ララベル R&D</h1>
 
 <div class="row">
   {{-- 村上 --}}
