@@ -51,7 +51,7 @@ class subscribe_mqtt_forever extends Command
 
             Log::create($attributes);
 
-        }, 1);
+        }, 0);
 
         $mqtt->loop(true);        
     }
